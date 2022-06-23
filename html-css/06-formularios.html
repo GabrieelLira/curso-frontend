@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Formularios</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" type="text/css" href="./css/06-formulario.css">
+	</head>
+	<body>
+
+		<header>
+            <nav id="menu">
+                <a href="homepage.html" >Home</a>
+                <a href="#">Sobre</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+        </header>
+
+		<article>
+		
+			<main>
+			
+				<h1>Fale conosco</h1>
+	
+					<h2>Contato</h2>
+					<p>Preencha os campos abaixo</p>
+			
+				<form method="post">
+					
+					<div class="box-label">
+						<label color="#111" for="nome">Nome</label><br>
+						<input type="text" name="nome" id="nome">
+					</div>
+
+					<div class="box-label">
+						<label for="email">Email</label><br>
+						<input type="email" name="email" id="email">
+					</div>
+
+					<div class="box-label">
+						<label for="mensagem">Mensagem</label><br>
+						<textarea name="menagem" id="mensagem" rows="3"></textarea>
+					</div>
+
+					<div class="box-label">
+						<p>
+							<label> Qual linguagem você Prefere?</label>
+							<input type="radio" name="linguagens" value="HTML"> HTML
+							<input type="radio" name="linguagens" value="CSS"> CSS
+							<input type="radio" name="linguagens" value="JavaScript"> JavaScript
+						</p>
+					</div>
+
+					<div class="box-label">
+						<p>
+							<label> Quais linguagens você sabe?</label>
+							<input type="checkbox" name="linguagens" value="HTML"> HTML
+							<input type="checkbox" name="linguagens" value="CSS"> CSS
+							<input type="checkbox" name="linguagens" value="JavaScript"> JavaScript
+						</p>
+					</div>
+
+					<div class="box-label">
+						<label>Qual sua cor favorita</label>
+						<select>
+							<option value="Azul">Azul</option>
+							<option value="Roxo" selected>Roxo</option>
+							<option value="Vermelho">Vermelho</option>
+						</select>
+					</div>
+
+					<input id="submit" type="submit"> 
+
+				</form>
+
+			</main>
+
+		</article>
+
+		<footer>
+			<p>Desenvolvido por <a class="letra" href="https://github.com/GabrieelLira">Gabriel Lira</a></p>
+		</footer>
+		
+	</body>
+</html>
