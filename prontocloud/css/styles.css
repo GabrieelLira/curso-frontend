@@ -1,0 +1,177 @@
+html{
+    font-size: 62.5%;
+    background-color: #63b2f2e3;
+}
+
+
+header{
+    background-color: #63b2f2;
+}
+
+
+header, #header-conteiner{
+    height: 80px;
+    display: flex;
+}
+
+
+#header-conteiner {
+    flex: 1; 
+    justify-content: right; 
+    align-items: center; 
+}
+
+
+nav > a{
+    padding: 10px 25px;
+    background-color: #2c506c;
+    margin: 1px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font: 2rem sans-serif;
+}
+
+
+img.logo{
+  padding: 20px;
+      
+ 
+}
+
+
+article {
+    margin: 30px auto;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+h1{
+    font-size: 3rem;
+    font-family: sans-serif;
+    padding: 15px;
+    text-align: center;
+    color: #244158;
+}
+
+
+h2{
+    font-size: 2.6rem;
+    font-family: sans-serif;
+    padding-left: 5px;
+
+}
+
+
+h3{
+    font-size: 2.4rem;
+    font-family: sans-serif;
+    padding-left: 5px;
+    padding-top: 25px;
+}
+
+
+h4{
+    font-size: 1.9rem;
+    font-family: sans-serif;
+    padding-left: 2px;
+    padding-top: 25px;
+}
+
+
+p{
+    font-size: 1.7rem;
+    padding: 4px;
+}
+
+
+ol{
+    list-style-position:inside;
+}
+
+
+li{
+    font-size: 1.7rem;
+    padding: 4px;
+}
+
+
+#tenho-interesse {
+    background-color: #63b2f275;
+    padding: 10px;
+}
+
+
+footer{
+background-color: #63b2f2;
+text-align: center;
+}
+
+
+footer > p {
+    padding: 3px;
+    font-size: 1.7rem;
+}
+
+
+#feito-por{
+    font-size: 1.5rem;
+}
+
+
+@media (max-width: 800px){
+    html{
+        font-size: 50%;
+    }
+
+    #header-conteiner a{
+        padding: 10px 20px;
+        background-color: #2c506c;
+        margin: 1px 30px;
+        border-radius: 20px;
+        text-decoration: none;
+        color: white;
+        font: 3rem sans-serif;
+    }
+    
+    #header-conteiner {
+        flex: 1; 
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    img{
+        display: none;
+    }
+}
+
+
+@media (max-width: 685px){
+    #header-conteiner a{
+        padding: 10px 15px;
+        background-color: #2c506c;
+        margin: 1px 15px;
+        border-radius: 20px;
+        text-decoration: none;
+        color: white;
+        font: 3rem sans-serif;
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 400px){
+    #header-conteiner a{
+        padding: 10px 10px;
+        background-color: #2c506c;
+        margin: 1px 10px;
+        border-radius: 20px;
+        text-decoration: none;
+        color: white;
+        font: 3rem sans-serif;
+        font-size: 20px;
+    }
+}
