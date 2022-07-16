@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/13-clc-md-js-02.css">
+        <title>Calcular média</title>
+    </head>
+    <body>
+        <article>
+            <h1>Calcule a média de 4 números:</h1>
+
+            <form>
+                Nota 1:<input type="number" id="n1" min="0.0" max="10.0" step="0.1" required onblur="validarNum()">
+                Nota 2:<input type="number" id="n2" min="0.0" max="10.0" step="0.1" required onblur="validarNum()">
+                Nota 3:<input type="number" id="n3" min="0.0" max="10.0" step="0.1" required onblur="validarNum()">
+                Nota 4:<input type="number" id="n4" min="0.0" max="10.0" step="0.1" required onblur="validarNum()">
+                <input type="button" id="calcular" value="Calcular" onclick="cal()">
+                <input type="button" id="limpar" value="Limpar" onclick="limp()">
+                <div id="res"></div>
+                <div id="res2"></div>
+            </form>
+            <div id="aviso" class=""></div>
+
+        </article>
+        
+        <script src="javascript/13.js"></script>
+    </body>
+</html>
