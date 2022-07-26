@@ -1,0 +1,44 @@
+input, button{
+    margin: 1.5rem auto;
+    display: block;
+}
+
+input{
+    width: 80%;
+    padding: 0.8rem 1rem; 
+}
+
+
+form{
+    max-width: 500px;
+}
+
+
+article{
+    max-width: 500px;
+}
+
+
+button {
+    border: 0 none;
+    border-radius: 2rem;
+    color: #fff;
+    background-color: #310070;
+    width: 10rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+
+.erro {
+    border-color: #f00;
+}
+
+
+div.mensagem{
+    color: #f00;
+    background-image: linear-gradient(30deg, rgba(255, 0, 0, 0.575), #fff );
+    font-size: 1.5rem;
+    font-weight: bold;
+}
