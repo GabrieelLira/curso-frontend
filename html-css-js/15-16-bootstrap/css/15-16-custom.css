@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+html, body{
+    font-size: 62.5%;
+    height: 100%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*CSS para mudar a cor do fundo da página*/
+#selecionarCor{
+    display: flex;
+    border-radius: 20%;
+    padding: 0px 5px;
+    float: right;
+    margin-top: 3px;
+}
+#white{
+    display: inline-flex;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 11px;
+    border-radius: 10%;
+    border: 2px solid black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#black{
+    display: inline-flex;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 11px;
+    border-radius: 10%;
+    border: 2px solid white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.container-bg{
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+.container{
+    margin-bottom: 50px;
+}
+
+
+h1{
+    font-size: 3.2rem;
+}
+
+
+h2{
+    font-size: 2.7rem;
+}
+
+
+h5{
+    font-size: 2.2rem;
+}
+
+
+h6{
+    font-size: 2rem;
+}
+
+
+p,
+.btn,
+header, 
+a, 
+input.form-control,
+th,
+label
+{
+    font-size: 1.5rem;
+}
+
+
+.card{
+    width: 32%;
+    float: left;
+    margin: 8px;
+}
+
+
+input,
+.btn-success,
+textarea{
+    margin: .5rem 0px ;
+}
+
+
+textarea.form-control {
+    width: 100% !important;
+}
+
+
+.purple{
+    color:#6800F0;
+    font-weight: bolder;
+    font-size: 2.2rem;
+}
+
+
+.letra{
+    font: 1.5em 'Indie Flower', cursive;
+    color:#6800F0;
+    font-weight: bold;
+}
+
+
+.hover:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+
+h1{
+    color: #6800F0;
+}
+
+
+.adjust-height{
+    margin: 5px;
+}
+
+
+header{
+    background-color: #121212;
+    font-weight: bold;
+}
+
+
+section{
+    flex: 1 0 auto;
+}
+
+
+footer{
+    background-color: #121212;
+    text-align: center;
+    padding: 8px;
+    color: white;
+    margin-top: 15px;
+    flex-shrink: 0;
+}
+
+
