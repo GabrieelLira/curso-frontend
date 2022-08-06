@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/15-16-custom.css">
+        <title>Bootstrap |</title>
+    </head>
+    <body>
+
+        <header>
+            <nav class="navbar navbar-dark">
+                <div class="container-fluid">
+                  <h1>Logo</h1>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h6></h6>
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link hover purple" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover purple" aria-current="page" href="index.html#sobre">Sobre</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link hover purple" aria-current="page" href="index.html#produtos">Produtos</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link hover purple" aria-current="page" href="index.html#contato">Contato</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link hover purple" aria-current="page" href="cadastro.html">Cadastro</a>
+                          </li>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </header>
+
+        <!--HTML para mudar a cor do fundo da página -->
+        <section>
+            <div id="selecionarCor">
+                <p id="white" onclick="colorWhite()">White</p>
+                <p id="black" onclick="colorBlack()">Black</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active ">
+                        <div class="ratio ratio-21x9">
+                            <img src="./images/pexels-josh-sorenson-1714208.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-caption">
+                            <h5>Lorem ipsum dolor</h5>
+                            <a class="btn btn-light stretched-link">Call to action</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="ratio ratio-21x9">
+                            <img src="./images/pexels-vojtech-okenka-392018.jpg" class="d-block w-100 opacity-75" alt="...">
+                        </div>
+                        <div class="carousel-caption">
+                            <h5 class="text-truncate col-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam tempora quas dignissimos quos nemo earum commodi. Beatae voluptatibus itaque, ab aspernatur delectus optio debitis? Sint suscipit voluptatem nostrum blanditiis ratione.</h5>
+                            <a class="btn btn-light stretched-link">Call to action</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="container container-bg" id="sobre">
+                <div class="row">
+                    <div class="col-md-8 col-sm12">
+                        <h2>Sobre nós</h2>
+                        <p>A nossa loja oferece uma experiência única para você! Aqui você escolhe se quer comprar na nossa loja física ou virtual, se quer receber o produto por delivery ou retirar nas lojas e se quer pagar com dinheiro, cartão de débito ou crédito, ou via PIX! Só na nossa loja você compra do seu jeito!</p>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <img src="images/pexels-amar-preciado-11025648.jpg" alt="Imagem de um computador" class="img-fluid">
+                    </div>
+                </div>
+        </section>
+
+        <section class="container container-bg" id="produtos">
+                <div class="row">
+                    <div class="col">
+                        <h2>Produtos</h2>
+                        <div class="card">
+                            <img src="images/pexels-cottonbro-3945657.jpg" alt="Imagem de um controle de ps4" class="img-fluid">
+                            <div class="card-body">
+                                <h5 class="card-title">Controle PS4</h5>
+                                <p class="card-text">Controle de ps4 sem fio, colorações branco e preto</p>
+                                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">Ver produto</a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="images/pexels-olena-bohovyk-1772123.jpg" alt="Imagem de um teclado de computador" class="img-fluid">
+                            <div class="card-body">
+                                <h5 class="card-title">Teclado de Computador</h5>
+                                <p class="card-text">Teclado com fio, de coloração branco</p>
+                                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2">Ver produto</a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="images/pexels-saeed-khokhar-9091106.jpg" alt="Imagem de um mouse gamer" class="img-fluid">
+                            <div class="card-body">
+                                <h5 class="card-title">Mouse Gamer</h5>
+                                <p class="card-text">Com botões laterias, e no meio para droca de DPI</p>
+                                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3">Ver produto</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+
+
+        <section class="container container-bg" id="contato">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <h2>Contato</h2>
+                        <p>Ficou interresado? Preencha os campos do formulário para receber uma cotação</p>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <form class="form">
+                            <div class="input-group">
+                                <input class="form-control" type="text" name="nome" placeholder="digite seu nome">
+                            </div>
+                            <div class="input-group">
+                                <input class="form-control" type="text" name="email" placeholder="digite seu email">
+                            </div>
+                            <div class="input-group">
+                                <textarea name="" rows="5" cols="130"></textarea>
+                            </div>
+                           <div class="btn btn-lg btn-success">Solicitar Cotação</div>
+                        </form>
+                    </div>
+                </div>
+        </section>
+
+        <div class="modal fade" id="modal-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="model-title">Produto 1</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Confira a quantidade e o preço!</h6>
+                        <table class="table table-hover table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Quantidade</th>
+                                    <th>Valor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>1</th>
+                                    <th>R$ 40</th>
+                                </tr>
+                                <tr>
+                                    <th>10</th>
+                                    <th>R$ 360</th>
+                                </tr>
+                                <tr>
+                                    <th>100</th>
+                                    <th>R$ 3600</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="model-title">Produto 1</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Confira a quantidade e o preço!</h6>
+                        <table class="table table-hover table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Quantidade</th>
+                                    <th>Valor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>1</th>
+                                    <th>R$ 60</th>
+                                </tr>
+                                <tr>
+                                    <th>10</th>
+                                    <th>R$ 540</th>
+                                </tr>
+                                <tr>
+                                    <th>100</th>
+                                    <th>R$ 5400</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-3">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="model-title">Produto 1</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Confira a quantidade e o preço!</h6>
+                        <table class="table table-hover table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Quantidade</th>
+                                    <th>Valor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>1</th>
+                                    <th>R$ 50</th>
+                                </tr>
+                                <tr>
+                                    <th>10</th>
+                                    <th>R$ 450</th>
+                                </tr>
+                                <tr>
+                                    <th>100</th>
+                                    <th>R$ 4500</th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Desenvolvido por <a class="letra" href="https://github.com/GabrieelLira">Gabriel Lira</a></p>
+        </footer>
+
+        <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="./js/15-16.js"></script>
+    </body>
+</html>

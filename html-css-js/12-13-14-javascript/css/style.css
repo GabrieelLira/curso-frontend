@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+:root{
+  --cor0:#9249F2;
+  --cor1:#6800F0;
+  --cor2:#310070 ;
+}
+
+
+*{
+  font-family: sans-serif;
+}
+
+
+html{
+  background-color: black;
+}
+
+
+nav#menu > a:hover {
+  background-image: linear-gradient(to top, var(--cor2), var(--cor0,), var(--cor2));
+  box-shadow: 0px 0px 7px #9249f2 ;
+  border-radius: 15px;
+}
+
+
+header{
+  background-color: black;
+  height: 100px;
+  font-size: 2em;
+}
+
+
+#menu a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 20px;
+  display: block;
+  margin: 0px 10px;
+}
+
+
+header, #menu, #menu {
+  display: flex;
+}
+
+
+#menu{
+  flex: 1; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+
+article{
+  background-color: white;
+  min-width: 400px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+
+main.box{
+  display: flex;
+}
+
+
+.letra{
+  font: 2em 'Indie Flower', cursive;
+  color: var(--cor2);
+  font-weight: bold;
+}
+
+
+.foto{
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid var(--cor0);
+}
+
+
+div.box{
+  padding: 10px;
+}
+
+
+aside.box2{
+  display: inline-block;
+  max-width: 1200px;
+  min-width: 400px;
+}
+
+article > h1{
+  font: 2em bold serif;
+  margin: 10px;
+  color: #310070;
+}
+
+a > img{
+  border: 1px solid var(--cor2);
+margin: 10px 27px;
+  display: inline;
+  padding: 20px;
+}
+
+
+footer{
+  background-color: black;
+  text-align: center;
+  padding: 8px;
+  color: white;
+  margin-top: 15px;
+}
+
