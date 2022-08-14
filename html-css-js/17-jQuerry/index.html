@@ -4,9 +4,11 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
         <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="./vendor/owl/css/owl.css">
         <link rel="stylesheet" href="./vendor/fontawesome/fontawesome.css">
+        <link rel="stylesheet" href="vendor/jquery-ui/jquery-ui.min.css">
         <link rel="stylesheet" href="./css/style.css">
         <title>jQuery</title>
     </head>
@@ -26,20 +28,20 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="products.html">Produtos</a>
+                            <a class="nav-link" href="#featured">Produtos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">Sobre nós</a>
+                        <li class="nav-item ">
+                            <a class="nav-link nav-modal-open" href="#" rel="sobre">Sobre nós</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contato</a>
+                        <li class="nav-item ">
+                            <a class="nav-link nav-modal-open" href="#" rel="contato">Contato</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
         
-        <div class="banner">
+        <section class="banner">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -51,88 +53,63 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         
-        <div id="featured" class="featured-items">
+
+           <div class="container-destaque">
+                <h1 class="letra-destaque">Destaques</h1>
+           </div>
+
+        <main id="featured" class="featured-items">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-heading">
-                            <div class="line-dec"></div>
-                            <h1>Destaques</h1>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
+                    <div class="col-md-12" >
                         <div class="owl-carousel owl-theme">
                             <div class="featured-item">
-                                <img src="assets/images/item-01.jpg" alt="Item 1">
-                                <h4>Produto 1</h4>
+                                <img class="img" src="assets/images/item-01.jpg" alt="Item 1">
+                                <h4 >Produto 1</h4>
                                 <h6>R$ 20,00</h6>
-                                <a href="single-product.html">
+                                <a href="#" class="nav-modal-open" rel="comprar">
                                     Comprar
                                 </a>
                             </div>
                             <div class="featured-item">
-                                <img src="assets/images/item-02.jpg" alt="Item 2">
+                                <img class="img" src="assets/images/item-02.jpg" alt="Item 2">
                                 <h4>Produto 2</h4>
                                 <h6>R$ 20,00</h6>
-                                <a href="single-product.html">
+                                <a href="#" class="nav-modal-open" rel="comprar">
                                     Comprar
                                 </a>
                             </div>
                             <div class="featured-item">
-                                <img src="assets/images/item-03.jpg" alt="Item 3">
+                                <img class="img" src="assets/images/item-03.jpg" alt="Item 3">
                                 <h4>Produto 3</h4>
                                 <h6>R$ 20,00</h6>
-                                <a href="single-product.html">
+                                <a href="#" class="nav-modal-open" rel="comprar">
                                     Comprar
                                 </a>
                             </div>
                             <div class="featured-item">
-                                <img src="assets/images/item-04.jpg" alt="Item 4">
+                                <img class="img" src="assets/images/item-04.jpg" alt="Item 4">
                                 <h4>Produto 4</h4>
                                 <h6>R$ 20,00</h6>
-                                <a href="single-product.html">
+                                <a href="#" class="nav-modal-open" rel="comprar">
                                     Comprar
                                 </a>
                             </div>
                             <div class="featured-item">
-                                <img src="assets/images/item-05.jpg" alt="Item 5">
+                                <img class="img" src="assets/images/item-05.jpg" alt="Item 5">
                                 <h4>Produto 5</h4>
                                 <h6>R$ 20,00</h6>
-                                <a href="single-product.html">
+                                <a href="#" class="nav-modal-open" rel="comprar">
                                     Comprar
                                 </a>
                             </div>
                             <div class="featured-item">
-                                <img src="assets/images/item-06.jpg" alt="Item 6">
+                                <img class="img" src="assets/images/item-06.jpg" alt="Item 6">
                                 <h4>Produto 6</h4>
                                 <h6>R$ 20,00</h6>
-                                <a href="single-product.html">
-                                    Comprar
-                                </a>
-                            </div>
-                            <div class="featured-item">
-                                <img src="assets/images/item-04.jpg" alt="Item 7">
-                                <h4>Produto 7</h4>
-                                <h6>R$ 20,00</h6>
-                                <a href="single-product.html">
-                                    Comprar
-                                </a>
-                            </div>
-                            <div class="featured-item">
-                                <img src="assets/images/item-05.jpg" alt="Item 8">
-                                <h4>Produto 8</h4>
-                                <h6>R$ 20,00</h6>
-                                <a href="single-product.html">
-                                    Comprar
-                                </a>
-                            </div>
-                            <div class="featured-item">
-                                <img src="assets/images/item-06.jpg" alt="Item 9">
-                                <h4>Produto 9</h4>
-                                <h6>R$ 20,00</h6>
-                                <a href="single-product.html">
+                                <a href="#" class="nav-modal-open" rel="comprar">
                                     Comprar
                                 </a>
                             </div>
@@ -140,56 +117,123 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
+
+        <section class="container-destaque">
+            <div class="row">
+                <div class="col-md-3">
+                    <h1 class="letra-destaque">Quer receber Promoções?</h1>
+                    <p class="letra-destaque">Inscreva-se e reveba ofertas</p> 
+                </div>
+                <div class="col-md-4">
+                     <input type="text" name="email" id="email" class="form-control" placeholder="Digite seu email" aria-describedby="helpemail">
+                    <small id="helpId" class="letra-destaque text-muted">Digite um e-mail válido</small>
+                    
+                </div>
+                <div class="col-md-4">
+                    <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome" aria-describedby="helpNome">
+                  <small id="helpId" class="letra-destaque text-muted">Digite um nome</small>
+                </div>
+                <div class="col-md-1">
+                    <button type="submit" class="btn btn-dark">Enviar</button>
+                </div>
+            </div>
+        </section>
+
         
-        <div class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="logo">
-                            <img src="assets/images/header-logo.png" alt="">
-                        </div>
+        <footer class="footer container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="logo">
+                        <img src="assets/images/footer-logo.png" alt="">
                     </div>
-                    <div class="col-md-12">
-                        <div class="footer-menu">
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Help</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">How It Works ?</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="#top">Home</a></li>
+                            <li><a href="" class="nav-modal-open" rel="sobre">Sobre</a></li>
+                            <li><a href="" class="nav-modal-open" rel="contato">Contato</a></li>
+                        </ul>
                     </div>
-                    <div class="col-md-12">
-                        <div class="social-icons">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="social-icons">
+                        <ul>
+                            <li><a href="https://twitter.com/kazutocfal"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://github.com/GabrieelLira" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="copyright-text">
+                        <p>WebStore &copy; Todos os direitos reservados
                     </div>
                 </div>
             </div>
+        </footer>
+    
+       
+
+        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Body
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="contato" class="visually-hidden">
+          <form action="" class="form">
+                <div class="mb-3">
+                  <label for="nome" class="form-label">Nome</label>
+                  <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome" aria-describedby="helpNome">
+                  <small id="helpId" class="text-muted">Digite um nome</small>
+                </div>
+                <div class="mb-3">
+                    <label for="Email" class="form-label">E-mail</label>
+                    <input type="text" name="email" id="email" class="form-control" placeholder="Digite seu email" aria-describedby="helpemail">
+                    <small id="helpId" class="text-muted">Digite um e-mail válido</small>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Número</label>
+                    <input type="text" name="phone" id="phone" class="form-control" placeholder="Digite seu número de celular" aria-describedby="helpphone">
+                    <small id="helpId" class="text-muted">Digite um número válido</small>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+
+        <div id="sobre" class="visually-hidden">
+            <p id="letra-sobre">Você sabia que cliente que faz parte do programa de fidelidade tem direito a descontos exclusivos nos lançamentos das novas coleções? Não perca mais tempo e faça o seu cadastro!</p>
+        </div>
+
+        <div id="comprar" class="visually-hidden">
+            <h6>Ficou interresado?</h6>
+            <p>Informe seu e-mail que te enviaremos um e-mail com confirmação da compra com mais detalhes do produto.</p> <hr>
+            <div class="mb-3">
+                <label for="Email" class="form-label">E-mail</label>
+                <input type="text" name="email" id="email" class="form-control" placeholder="Digite seu email" aria-describedby="helpemail">
+                <small id="helpId" class="text-muted">Digite um e-mail válido</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
         </div>
         
-        <div class="sub-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="copyright-text">
-                            <p>WebStore &copy; Todos os direitos reservados
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </div>
-            
+        <!-- Bíbliotecas -->
         <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
+        <script src="./vendor/jquery-mask/jquery.mask.min.js"></script>
+        <script src="vendor/jquery-ui/jquery-ui.min.js"></script>
         <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
         <script src="./vendor/owl/js/owl.js"></script>
+
+        <!-- Scripts Customizados -->
         <script src="./js/custom.js"></script>
     </body>
 </html>
