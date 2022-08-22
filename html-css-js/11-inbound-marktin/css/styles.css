@@ -4,14 +4,11 @@ html{
 }
 
 
-header{
-    background-color: #63b2f2;
-}
-
-
 header, #header-conteiner{
     height: 80px;
     display: flex;
+    background-color: #63b2f2;
+    border-radius: 10px;
 }
 
 
