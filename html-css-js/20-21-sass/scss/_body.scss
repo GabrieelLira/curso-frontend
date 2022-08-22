@@ -1,0 +1,42 @@
+body{
+        background-color: $color-01;
+}
+
+
+header{
+    max-width: 100vw;
+    background-image: linear-gradient(to bottom, $color-04, $color-01);
+    padding: 2rem 0;
+    p{
+        color: white;
+        font-size: 4rem;
+        text-align: center;
+        font-weight: bold;
+        text-shadow: 4px 4px #132b806e;
+    }
+}
+
+section{
+
+    max-width: 1400px;
+}
+
+footer{
+    max-width: 100vw;
+    background-image: linear-gradient(to bottom, $color-01, $color-04);
+    padding: 2rem 0;
+    margin-top: 8rem;
+    p{
+        font-size: $font-normal;
+        text-align: center;
+        color: white;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: $color-04;
+        }
+    }
+}
