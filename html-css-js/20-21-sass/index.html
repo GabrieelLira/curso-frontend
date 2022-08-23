@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/style.css">
         <title>Módulo Sass</title>
     </head>
@@ -13,41 +14,30 @@
             <p>Loja de Carros</p>
         </header>
 
-        <section>
-            <div class="destack">
-                <div class="container">
-                    <h1>Audi A5</h1>
-                    <h2>Destaque</h2>
-                    <img src="./images/pexels-mike-244206.jpg" alt="Foto Audi por Mike em Pexels">
-                    <p>Carro seminovo, 4 portas, completo com ar-condicionado, vidro e travas elelétricas.</p>
-                </div>
-            </div>
-            <div class="container">
-                <div class="blocks cars">
-                    <h2>Ver Carros</h2>
-                    <ul>
-                        <li>
-                            <div class="img-container">
-                                <img src="./images/pexels-mike-431950.jpg" alt="Foto Mike em Pexels">
-                            </div> 
-                            <a href="#01">Ver mais</a>
-                        </li>
-                        <li>
-                            <div class="img-container">
-                                <img src="./images/pexels-pixabay-248747.jpg" alt="Foto Pixabay Pixels">
-                            </div>
-                            <a href="#02">Ver mais</a>
-                        </li>
-                        <li>
-                            <div class="img-container">
-                                <img src="./images/pexels-torsten-dettlaff-70912.jpg" alt="Foto Pexels Torsten">
-                            </div> 
-                            <a href="#03"> Ver mais</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+            <article class="destack">
+                <h1>Audi A5</h1>
+                <h2>Destaque</h2>
+                <img src="./images/pexels-mike-244206.jpg" alt="Foto Audi por Mike em Pexels">
+                <p>Carro seminovo, 4 portas, completo com ar-condicionado, vidro e travas elelétricas.</p>
+            </article>
+
+            <main class="cars">
+                <h2>Ver outros Carros</h2>
+                <ul>
+                    <li class="img-container" >
+                        <img src="./images/pexels-lloyd-freeman-1429775.jpg" alt="Foto Mike em Pexels">
+                        <a href="#01">Ver mais</a>
+                    </li>
+                    <li class="img-container">
+                        <img src="./images/pexels-nordic-overdrive-627678.jpg" alt="Foto Pixabay Pixels">
+                        <a href="#02">Ver mais</a>
+                    </li>
+                    <li class="img-container">
+                        <img src="./images/pexels-pixabay-210019.jpg" alt="Foto Pexels Torsten">
+                        <a href="#03"> Ver mais</a>  
+                    </li>
+                </ul>
+            </main>
 
         <footer>
             <p> &copy; Desenvolvido por: <a href="https://github.com/GabrieelLira">Gabriel Lira</p>
