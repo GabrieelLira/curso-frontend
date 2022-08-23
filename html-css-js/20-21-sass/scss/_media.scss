@@ -1,0 +1,44 @@
+@media screen and (max-width: 1192px) {
+  .cars {
+    padding: 2rem 0;
+  
+    .img-container {
+      margin: 10px;
+      width: 30vw;
+      img{
+        width: 30vw;
+      } 
+    }
+  }
+
+}
+
+@media screen and (max-width: 1117px) {
+  .cars {
+    padding: 2rem 0;
+    width: 90vw;
+    .img-container {
+      margin: auto;
+      width: 28vw;
+      img{
+        width: 28vw;
+      } 
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .cars {
+    padding: 2rem 0;
+    width: 90vw;
+    .img-container {
+      display: block;
+      width: 45vw;
+      margin-bottom: 10px;
+      img{
+        width: 45vw;
+      } 
+    }
+  }
+}
+
