@@ -1,26 +1,37 @@
 .destack {
     margin: auto;
-    h1 {
+    position: relative;
+    &__title {
         color: $color-04;
         float: left;
         font-size: $font-big;
         margin-top: 0;
     }
-    h2 {
+    &__subtitle {
         float: left;
         font-size: $font-small;
         margin-left: $space-default;
         margin-top: $mt;
+        text-shadow: 1px 1px #021527;
+        
     }
-    img {
+    &__image {
         width: 100%;
         height: auto;
         margin: $space-default auto;
+
     }
-    p {
+    &__description {
         font-size: $font-normal;
+        font-weight: bold;
+        text-shadow: 1px 1px black;
         color: $color-03;
-        padding: 2rem 0;
-        width: 100%;
+        padding: $pad;
+        position: absolute;
+        left: 10px;  
+        bottom: 0;  
+        @media (max-width: 628px) {
+            font-size: 1rem ;
+        }
     }
 }

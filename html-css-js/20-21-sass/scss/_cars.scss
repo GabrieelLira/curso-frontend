@@ -1,27 +1,39 @@
 .cars {
-    padding: 2rem 0;
-
-    h2 {
+    padding: $pad;
+    text-align: center;
+    @media (max-width: $mw) {
+        padding: $pad;
+        width: 93vw;
+    }
+    &__title {
+        font-size: $font-big;
         color: $color-04;
         padding-bottom: $mb ;
     }
-    .img-container {
-        margin: 1px 33px;
+    &__image--container {
         display: inline-block;
         background-color: black;
-        padding: 5px;
-        img{
-            width: 100%;
+        padding: 3px;
+        margin: 1px 0.5rem;
+        @media (max-width: $mw) {
+            margin: 1px 3px;
+            width: $vw-01;
         }
-        a {
-            background-color: $color-default;
-            color: white;
-            display: block;
-            font-size: $font-normal;
-            padding: 4px 8px;
-            text-align: center;
-            text-decoration: none;
-        }  
     }
-}
+    &__image{
+        width: 100%;
+        @media (max-width: $mw) {
+            width: $vw-01;
+        }
+    }
+    &__button {
+        background-color: $color-default;
+        color: white;
+        display: block;
+        font-size: $font-normal;
+        padding: 4px 8px;
+        text-align: center;
+        text-decoration: none;  
+    }
+} 
 
