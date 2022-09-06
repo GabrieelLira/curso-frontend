@@ -1,0 +1,14 @@
+footer{
+    display: block;
+    height: 8vh;
+    width: 100%;
+    background-color: $color-02;
+    p{
+        font-size: $font-small;
+        color: $color-01;
+        margin: auto;
+        padding: 22px;
+
+        text-align: center;
+    }
+}
