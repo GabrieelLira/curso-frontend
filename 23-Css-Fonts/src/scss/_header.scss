@@ -1,0 +1,33 @@
+header{
+    width: 100%;
+    background-color: $color-02;
+    font-size: $font-bigger;
+    font-family: 'Berkshire Swash', cursive;
+    color: $color-01;
+    #header-container{
+        height: 15vh;
+        margin: auto;
+        display: flex;
+        max-width: 1500px;
+        list-style: none;
+        #header-left{
+            width: $vw-02;
+            text-align: left;
+            padding: $r1;
+            text-shadow: 1px 1px 10px black;
+        }
+        #header-right{
+            width: $vw-02;
+            text-align: right;
+            padding: $r1;
+            a{
+                border-radius: 20px;
+                padding: 0 10px;
+                box-shadow: 1px 1px 10px black;
+                text-decoration: none;
+                color: $color-01;
+            }
+        }
+    }
+}
+
