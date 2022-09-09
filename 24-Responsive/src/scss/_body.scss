@@ -1,0 +1,19 @@
+.container{
+    display: block;
+    height: auto;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 50px;
+    border: 1px solid $color-01;
+    &__title{
+        color: $color-01;
+        font-size: $font-normal;
+        font-family: $font;
+    }
+    &__paragraph{
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,93 @@
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 80px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: auto;
+    .popup__content {
+        max-height: 80%;
+        overflow: auto;
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 0;
+        border: 1px solid $color-01;
+        max-width: 700px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 30px;
+        box-shadow: 0 0 20px 0px #f7531e;
+        &--close {
+            color: black;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 10px;
+            &:hover,
+            &:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+        &--title{
+            font-size: $font-normal;
+            color: $color-01;
+            text-shadow: 0 0 2px black;
+            text-align: center;
+            padding: 10px;
+        }
+        &--erro{
+            color: white;
+            background-color: red;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        .form__content{
+            font-size: 1rem;
+            margin: 1rem auto;
+            display: block;
+            border: none !important;
+            label,
+            input{
+                width: 80%;
+                margin: 0 auto;
+                display: block;
+            }
+            input{
+                padding: 0.8rem 1rem; 
+            }
+            .obrigatorio{
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                border-bottom: 2px solid black;
+                padding: 10px;
+                &:focus{
+                    outline: none;
+                }
+            }
+            #submit {
+                display: block;
+                border: 0 none;
+                border-radius: 2rem;
+                color: #fff;
+                background-color: $color-01;
+                width: 30%;
+                padding: 1rem 2rem;
+                cursor: pointer;
+                margin: auto;
+                text-align: center;
+            }
+        }
+    }
+}
+.erro {
+    border: 1px solid red !important;
+}

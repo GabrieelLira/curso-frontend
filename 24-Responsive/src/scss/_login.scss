@@ -1,0 +1,61 @@
+#login{
+    display: block;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin: auto;
+    background-color: #3b3b3b;
+    max-width: 350px;
+    height: 320px;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    &__title{
+        font-size: $font-small;
+        padding: 10px 0 0 0;
+        color: $color-01;
+        text-shadow: 1px 1px 6px black;
+    }
+    &__email,
+    &__password{
+        color: white;
+        background-color: #3b3b3b;
+        margin: 40px 50px;
+        width: 70%;
+        height: 20px;
+        display: block;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: 2px solid $color-01;
+        padding: 5px;
+        &:focus{
+            background-color: white;
+            color: black;
+            outline: none;
+        }
+    }
+    &__submit{
+        margin: auto;
+        width: 100%;
+        height: 40px;
+        background-color: $color-01;
+        cursor: pointer;
+        color: white;
+    }
+    &__subtitle{
+        font-size: .8rem;
+    }
+    #registrationBtn{
+        align-items: center;
+        font-size: .7rem;
+        color: $color-01;
+        padding-right: 2px;
+    }
+    &:hover{
+        box-shadow: 0 0 20px 0px #f7531e;
+    }
+    ::placeholder{
+    color: white;
+    font-family: sans-serif;
+    }
+}

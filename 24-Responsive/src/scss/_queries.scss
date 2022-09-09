@@ -1,0 +1,34 @@
+@media (max-width:860px) {
+    #introduction{
+        display: block;
+        max-width: 100%;
+        margin: 30px auto;
+    }
+    #introduction__title{
+        font-size: $font-normal;
+        margin: 10px auto;
+        max-width: 430px;
+    }
+    #introduction__paragraph{
+        font-size: $font-small;
+        margin: 10px auto;
+        max-width: 600px;
+    }
+    .header__right--btn{
+        padding: 4px 10px !important;
+        font-size: .8rem !important;
+    }
+    #header__left{
+        font-size: .8rem !important;
+    }
+    #header__left span{
+        font-size: 1.2rem !important
+    }
+    section{
+        margin: 30px;
+        display: block;
+        background-image:none;
+        background-position: none;
+        background-repeat: none;
+    }
+}
