@@ -1,0 +1,18 @@
+#introduction{
+    max-width: 700px;
+    color: white;
+    &__title{
+        font-family: $font;
+        margin: 50px;
+        margin-right: 0;
+        color: $color-01;
+        text-shadow: 1px 1px white;
+        font-size: $font-big;
+    }
+    &__paragraph{
+        margin: 50px;
+        margin-right: 0;
+        font-size: $font-normal;
+        max-width: 500px;
+    }
+}
