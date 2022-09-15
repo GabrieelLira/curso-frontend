@@ -62,16 +62,7 @@ input {
     padding-bottom: 0;
 }
 
-li{
-    font-size: 1.3rem;
-    text-align: center;
-    list-style-type: none;
-}
-
-.msg2{
-    padding-top: 0 !important;
-    border: 1PX SOLID #f00;
-    font-size: 1.5rem;
-    color: red;
+.erro{
+    border: 1px SOLID #f00;
 }
 
