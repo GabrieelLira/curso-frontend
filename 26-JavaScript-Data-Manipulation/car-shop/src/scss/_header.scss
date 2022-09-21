@@ -1,0 +1,96 @@
+header {
+    max-width: 100%;
+    margin: auto;
+    height: auto;
+    color: white;
+    font-family: $font-family-sans;
+
+    #header {
+        margin: auto;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $color-01;
+        &__logo {
+            color: white;
+            font-size: $font-big;
+            font-weight: bold;
+            text-shadow: 3px 3px $color-03;
+            padding: 20px;
+            text-decoration: none;
+            display: block;
+        }
+        &__contact {
+            margin: 0 15px;
+        }
+    }
+
+    #header_nav {
+        border-bottom: 1px solid $color-01;
+        margin-bottom: 10px;
+        padding: 10px 0;
+        ul {
+            max-width: 800px;
+            margin: auto;
+            display: flex;
+        }
+    }
+}
+
+.header__button {
+    display: block;
+    font-size: $font-medium;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    padding: 5px 15px;
+    margin: 0 auto;
+    border: 2px solid #0D2563;
+    border-radius: 30px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        background-color: $color-02;
+        z-index: -1;
+        transition: .6s ease;
+    }
+}
+
+.hover {
+    &:before {
+        width: 0;
+        height: 100%;
+    }
+
+    &:hover {
+        box-shadow: 0 0 10px $color-03;
+
+        &:before {
+            width: 100%;
+        }
+    }
+}
+
+.hover2 {
+    &:before {
+        width: 110%;
+        height: 0;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &:hover {
+        box-shadow: 0 0 10px $color-03;
+
+        &:before {
+            height:  350%;
+        }
+    }
+}

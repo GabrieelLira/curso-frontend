@@ -1,0 +1,41 @@
+#img{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(../../public/pexels-pixabay-164634.jpg);
+    max-width: 1200px;
+    height: 400px;
+    margin: 10px auto;
+    border: 1px solid $color-03;
+    box-shadow: inset 0 0 10px $color-03;
+}
+
+
+#about{
+    text-align: center;
+    max-width: 800px;
+    box-shadow: 1px 1px 10px $color-01;
+    border-radius: 60px;
+    margin: 20px auto;
+    background-color: $color-01;
+    &__title{
+        font-size: $font-medium;
+        font-family: $font-family-sans;
+        color: $color-03;
+        font-weight: 800;
+        top: 80%;
+    }
+    &__paragraph{
+        font-weight: 600;
+        font-size: $font-normal;
+        color: $color-02;
+        &--connect,
+        &--register{
+            &:hover{
+                border-bottom: 1px solid white;
+            }
+        }
+    }
+
+}
