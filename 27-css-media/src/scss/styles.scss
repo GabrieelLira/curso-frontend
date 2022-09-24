@@ -1,0 +1,24 @@
+$color-font: #fff;
+$color-bg-default: #1E004A;
+$font-default: Arial, Helvetica, sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-default;
+    margin: 0;
+}
+
+h1 {
+    color: $color-font;
+    text-align: center;
+    width: 100%;
+}
+
+@import 'header';
+@import 'player';
+@import 'images';

@@ -1,0 +1,83 @@
+header {
+    background-color: $color-bg-default;
+    width: 100%;
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+
+    h1 {
+        margin-top: 4rem;
+        position: relative;
+        z-index: 9;
+    }
+}
+
+.waves {
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 110%;
+    padding-bottom: 20px solid $color-bg-default;
+    @media (max-width:1300px) {
+        width: 160%;
+    }
+    @media (max-width:900px) {
+        width: 230%;
+    }
+    @media (max-width:600px) {
+        width: 360%;
+    }
+    .wave-01 {
+        animation: dash1 30s ease-in-out infinite alternate;
+        stroke-dasharray: 150;
+        stroke: #969100;
+        stroke-width: 0.4px;
+        
+    }
+    
+    .wave-02 {
+       // animation: wave1 3s ease-in-out infinite alternate;
+       // animation: wave2 3s ease-in-out infinite alternate;
+       animation: dash1 20s ease-in-out infinite normal;
+       stroke-dasharray: 150;
+       stroke: #969100;
+       stroke-width: 0.8px;
+    }
+
+    .wave-03 {
+/*         animation: wave3 3s ease-in-out infinite alternate; */
+animation: dash1 10s ease-in-out infinite alternate;
+stroke-dasharray: 150;
+stroke: #969100;
+stroke-width: 1px;
+    }
+}
+
+
+@keyframes wave1 {
+    from {
+        transform: translateX(-50px);
+    }
+}
+
+@keyframes wave2 {
+    from {
+        transform: translateX(-100px);
+    }
+}
+
+@keyframes wave3 {
+    from {
+        transform: translateX(-20px);
+    }
+}
+
+@keyframes dash1 {
+    from {
+       stroke-dashoffset: 100;
+    }
+    to {
+        stroke-dashoffset: 1000;
+    }
+}
