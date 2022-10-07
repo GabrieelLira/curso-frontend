@@ -1,0 +1,81 @@
+body{
+    background-color: #fff;
+}
+
+#form {
+    border: 1px solid #999;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: auto;
+    margin-top: 2rem;
+    max-width: 600px;
+}
+.input-group,
+input {
+    display: block;
+    font-size: 1.8rem;
+    width: 40rem;
+    margin: auto;
+    margin-bottom: 2rem ;
+}
+
+span{
+    margin-left: .3rem;
+    opacity: 55%;
+}
+
+label {
+    font-size: 1.6rem;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: darkblue;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 1rem 1.5rem;
+}
+
+#mensagem p {
+    font-size: 1.4rem;
+    color: #f00;
+
+}
+
+strong {
+    font-size: 1.8rem;
+    color: #f00;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 300px; 
+    border-radius: 30px;
+  }
+  
+  .close {
+    color: red;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
